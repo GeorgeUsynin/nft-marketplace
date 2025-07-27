@@ -6,6 +6,7 @@ const SEPOLIA_NETWORK_ID = '0xaa36a7';
 export type WalletState = {
   currentConnection: {
     provider: BrowserProvider | undefined;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     shop: any | undefined;
     signer: ethers.JsonRpcSigner | undefined;
   };
